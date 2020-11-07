@@ -1,0 +1,111 @@
+#todo {
+    max-width: 70%;
+    min-width: 70%;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+hr {
+    border: none;
+    padding-bottom: .3rem;
+    border-top: 8px solid rgb(18, 1, 248);
+    border-left: none;
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+}
+
+form > input {
+    background-color: #f2f7f5;
+    max-width: 70%;
+    min-width: 70%;
+    border: 1px solid rgb(236, 231, 231);
+    border-radius: 5px;
+    padding: 16px;
+}
+form > input:focus {
+    outline: none;
+    border: 1px solid rgb(18, 1, 248);
+}
+form > button {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem;
+    width: 80px;
+    cursor: pointer;
+}
+/* Style for header */
+
+.list {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    max-width: 90%;
+    min-width: 90%;
+    margin: auto;
+}
+.list__item {
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+}
+.list__item:hover {
+    box-shadow: 0px 7px 0px 0px rgba(8, 4, 255, 0.75);
+    border-radius: 5px;
+}
+.list__item a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+#todo > nav > ul {
+    list-style: none;
+    padding: 0;
+}
+
+#todo > nav > ul > li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(18, 1, 248);
+    border-radius: 5px;
+}
+
+#todo > nav > ul > li h3{
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+#todo > nav > ul > li input{
+    position: relative;
+    top: 20px;
+}
+
+.delete {
+    position: relative;
+    top: 20px;
+    height: fit-content;
+    background-color: red;
+    color: white;
+    border: none;
+    margin-right: .8rem;
+}
+
+.deleteAll {
+    cursor: pointer;
+    padding: .5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(248, 1, 1, 0.596);
+    color: white;
+}
