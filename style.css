@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,bold&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    font-size: 16px;
+}
 #todo {
     max-width: 70%;
     min-width: 70%;
@@ -10,13 +18,18 @@ form {
     border-radius: 5px;
     max-width: 100%;
 }
+header > ul {
+    border-left: 1px solid darkgray;
+    border-top: 1px solid darkgray;
+}
 
-hr {
+header hr {
     border: none;
     padding-bottom: .3rem;
-    border-top: 8px solid rgb(18, 1, 248);
+    border-top: 1px solid rgb(145, 143, 170);
     border-left: none;
-    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+    
+    /* clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%); */
 }
 
 form > input {
@@ -108,4 +121,21 @@ form > button {
     outline: none;
     background-color: rgba(248, 1, 1, 0.596);
     color: white;
+}
+
+
+body > hr {
+    max-width: 70%;
+    min-width: 70%;
+    margin: auto;
+	margin-top: 2rem;
+}
+footer {
+    max-width: 70%;
+    min-width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    opacity: .5;
+
 }
